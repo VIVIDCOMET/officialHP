@@ -17,6 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: oven-sh/setup-bun@v2
+
       - uses: nexterias/actions-vercel@v1
         with:
           token: ${{ secrets.VERCEL_TOKEN }}
