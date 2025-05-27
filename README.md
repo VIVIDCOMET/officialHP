@@ -1,3 +1,7 @@
+# VIVID COMET Official HP
+
+[![CI/Prettier](https://github.com/VIVIDCOMET/officialHP/actions/workflows/prettier.yaml/badge.svg)](https://github.com/VIVIDCOMET/officialHP/actions/workflows/prettier.yaml)[![CI/Prettier](https://github.com/VIVIDCOMET/officialHP/actions/workflows/prettier.yaml/badge.svg)](https://github.com/VIVIDCOMET/officialHP/actions/workflows/prettier.yaml)[![Vercel](https://github.com/VIVIDCOMET/officialHP/actions/workflows/vercel.yaml/badge.svg)](https://github.com/VIVIDCOMET/officialHP/actions/workflows/vercel.yaml)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
