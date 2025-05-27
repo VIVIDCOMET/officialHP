@@ -156,7 +156,13 @@ export default function Home() {
             <br />
             あなたの「作りたい！」を応援します！
           </p>
-          <button className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover">
+          <button
+            className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover"
+            onClick={() =>
+              // TODO: Replace with your Discord invite link
+              window.open("https://discord.gg/your-discord-link", "_blank")
+            }
+          >
             Discordに参加する
           </button>
         </motion.div>
