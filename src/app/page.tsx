@@ -1,35 +1,22 @@
 import { Metadata } from "next";
 import HomeClientComponent from "./pageClientComponent";
+import { Common } from "@/customization";
 
 export const metadata: Metadata = {
-  title: "VIVIDCOMET - ゲームクリエイターのためのコミュニティ",
+  title: `${Common.siteName} - ゲームクリエイターのためのコミュニティ`,
   description: "ゲームクリエイターのためのコミュニティ",
   openGraph: {
-    title: "VIVIDCOMET - ゲームクリエイターのためのコミュニティ",
+    title: `${Common.siteName} - ゲームクリエイターのためのコミュニティ`,
     description: "ゲームクリエイターのためのコミュニティ",
     url: "https://vividco-hp.vercel.app/",
-    siteName: "VIVIDCOMET",
-    images: [
-      {
-        url: "https://game-creators-community.com/img/icon.png",
-        width: 1200,
-        height: 630,
-        alt: "Game Creators Community OG Image",
-      },
-    ],
+    siteName: Common.siteName,
+    images: [Common.ogpImage],
     locale: "ja_JP",
     type: "website",
   },
-  twitter: {
-    card: "summary",
-    title: "VIVIDCOMET - ゲームクリエイターのためのコミュニティ",
-    description: "ゲームクリエイターのためのコミュニティ",
-    site: "@VIVID_COMET",
-    creator: "@yuito_it_",
-    images: ["https://vividco-hp.vercel.app/img/icon.png"],
-  },
+  twitter: Common.twitter,
   icons: {
-    icon: "/favicon.ico",
+    icon: Common.favicon,
     /*apple: "/apple-touch-icon.png",
     shortcut: "/favicon-32x32.png",
     other: [
@@ -40,7 +27,7 @@ export const metadata: Metadata = {
       },
     ],*/
   },
-  themeColor: "#00a1e9",
+  themeColor: Common.themeColor,
 };
 
 export default function Home() {
