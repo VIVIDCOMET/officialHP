@@ -1,3 +1,5 @@
+import About from "./About";
+
 export const Footer = {
   title: "VIVIDCOMET",
   logotype: {
@@ -9,8 +11,7 @@ export const Footer = {
   description:
     "VIVIDECOMETは、ゲームクリエイターのためのコミュニティです。私たちは、ゲーム制作に関わる人々が集まり、学び、成長する場を提供します。",
   location: "日本",
-  //TODO: メールアドレスを設定
-  email: "info@vividcomet.com",
+  email: About.email,
   links: [
     {
       href: "/",
