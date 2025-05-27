@@ -43,13 +43,13 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <button
-              className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover"
+              className="bg-purple-500 text-white hover:bg-purple-700 px-8 py-3 rounded-md font-semibold cursor-pointer"
               onClick={() => window.open(HomeCustom.discord, "_blank")}
             >
               参加する
             </button>
             <button
-              className="bg-transparent border-2 border-purple-400 text-purple-200 px-8 py-3 rounded-md font-semibold button-hover"
+              className="bg-transparent border-2 border-purple-400 hover:bg-purple-700 text-purple-200 px-8 py-3 rounded-md font-semibold cursor-pointer"
               onClick={() => window.open("/works", "_blank")}
             >
               活動を見る
@@ -164,7 +164,7 @@ export default function Home() {
             あなたの「作りたい！」を応援します！
           </p>
           <button
-            className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover"
+            className="bg-purple-500 hover:bg-purple-700 text-white px-8 py-3 rounded-md font-semibold cursor-pointer"
             onClick={() => window.open(HomeCustom.discord, "_blank")}
           >
             Discordに参加する
