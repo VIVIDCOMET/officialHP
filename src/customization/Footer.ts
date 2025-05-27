@@ -1,10 +1,10 @@
 import About from "./About";
 
 export const Footer = {
-  title: "VIVIDCOMET",
+  title: "VIVID COMET",
   logotype: {
     src: "/img/logotype_white.png",
-    alt: "VIVIDCOMET Logo",
+    alt: "VIVID COMET Logo",
     width: 150,
     height: 20,
   },
@@ -40,12 +40,12 @@ export const Footer = {
       icon: "twitter", // Assuming you have an icon component for Twitter
     },
     {
-      href: "https://github.com/VIVIDCOMET",
+      href: "https://github.com/VIVID COMET",
       label: "GitHub",
       icon: "github", // Assuming you have an icon component for GitHub
     },
   ],
-  copyright: "(c) 2025 VIVIDCOMET All rights reserved.",
+  copyright: "(c) 2025 VIVID COMET All rights reserved.",
 };
 
 export default Footer;

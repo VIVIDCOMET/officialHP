@@ -1,8 +1,8 @@
 export const Header = {
-  title: "VIVIDCOMET",
+  title: "VIVID COMET",
   logotype: {
     src: "/img/logotype_white.png",
-    alt: "VIVIDCOMET Logo",
+    alt: "VIVID COMET Logo",
     width: 150,
     height: 20,
   },

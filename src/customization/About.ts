@@ -22,7 +22,7 @@ export const About = {
     },
   ],
   memberCount: [{ count: "16", label: "メンバー数" }],
-  email: "info@vividcomet.com",
+  email: "info@VIVID COMET.com",
 };
 
 export default About;
