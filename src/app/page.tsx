@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       },
     ],*/
   },
-  themeColor: "#ffffff",
+  themeColor: "#00a1e9",
 };
 
 export default function Home() {
