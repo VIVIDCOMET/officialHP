@@ -8,8 +8,7 @@ export const Footer = {
     width: 150,
     height: 20,
   },
-  description:
-    "VIVIDECOMETは、ゲームクリエイターのためのコミュニティです。私たちは、ゲーム制作に関わる人々が集まり、学び、成長する場を提供します。",
+  description: "VIVIDECOMETは、ゲームクリエイターのためのコミュニティです。",
   location: "日本",
   email: About.email,
   links: [
