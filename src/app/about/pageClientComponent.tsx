@@ -142,7 +142,7 @@ export default function AboutPage() {
           </p>
           <button
             className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
-            onClick={() => (window.location.href = About.email)}
+            onClick={() => (window.location.href = "/contact")}
           >
             お問い合わせはこちら
           </button>
