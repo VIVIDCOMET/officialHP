@@ -50,7 +50,7 @@ export default function Home() {
             </button>
             <button
               className="bg-transparent border-2 border-purple-400 hover:bg-purple-700 text-purple-200 px-8 py-3 rounded-md font-semibold cursor-pointer"
-              onClick={() => window.open("/works", "_blank")}
+              onClick={() => window.open("/works")}
             >
               活動を見る
             </button>

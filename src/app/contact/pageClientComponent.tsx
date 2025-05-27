@@ -122,7 +122,7 @@ export default function Contacts() {
                 <span className="text-purple-300 text-lg">{Contact.discord}</span>
               </p>
               <button
-                onClick={() => (window.location.href = Contact.discord)}
+                onClick={() => window.open(Contact.discord, "_blank")}
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
               >
                 Discordサーバーに参加
