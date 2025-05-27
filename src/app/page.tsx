@@ -1,56 +1,166 @@
+"use client";
 import Image from "next/image";
+import * as motion from "motion/react-client";
+import { FaUnity } from "react-icons/fa6";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaPenFancy } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="flex flex-col min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-blue-900">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-black/30" />
+        </div>
+        <div className="relative z-10 text-center text-white max-w-4xl px-6">
+          <motion.h1
+            className="font-bold mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/img/logotype_white.png"
+              alt="Game Creators Community"
+              width={1000}
+              height={0}
+              className="mx-auto"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          </motion.h1>
+          <motion.p
+            className="text-2xl mb-8 text-purple-200"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Read our docs
-          </a>
+            ゲームづくりの夢を叶える、クリエイターの集まる場所
+          </motion.p>
+          <motion.div
+            className="flex gap-4 justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <button className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover">
+              参加する
+            </button>
+            <button className="bg-transparent border-2 border-purple-400 text-purple-200 px-8 py-3 rounded-md font-semibold button-hover">
+              活動を見る
+            </button>
+          </motion.div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2
+            className="text-4xl font-bold text-center mb-12 text-purple-100"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            活動内容
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              className="bg-white/5 p-6 rounded-md shadow-lg card-hover"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="bg-purple-500/80 rounded-md w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                <FaUnity className="text-white opacity-90" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">
+                ゲーム開発
+              </h3>
+              <p className="text-purple-200 text-center break-keep">
+                Unityやゲームエンジンを使って、
+                <wbr />
+                みんなで
+                <wbr />
+                ワイワイゲームを
+                <wbr />
+                作ろう！
+                <wbr />
+                初心者歓迎！
+              </p>
+            </motion.div>
+
+            <motion.div
+              className="bg-white/5 p-6 rounded-md shadow-lg card-hover"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="bg-purple-500/80 rounded-md w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                <FaLaptopCode className="text-white opacity-90" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">
+                勉強会
+              </h3>
+              <p className="text-purple-200 text-center break-keep">
+                プログラミングやデザインの
+                <wbr />
+                スキルを
+                <wbr />
+                共有！
+                <wbr />
+                他の人と一緒に学び、成長しよう！
+              </p>
+            </motion.div>
+
+            <motion.div
+              className="bg-white/5 p-6 rounded-md shadow-lg card-hover"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="bg-purple-500/80 rounded-md w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                <FaPenFancy className="text-white opacity-90" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">
+                イラスト・音楽・ストーリー制作
+              </h3>
+              <p className="text-purple-200 text-center break-keep">
+                ゲームの世界観を
+                <wbr />
+                彩るイラストや音楽、
+                <wbr />
+                ストーリーを
+                <wbr />
+                一緒に作ろう！
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 relative overflow-hidden">
+        <motion.div
+          className="max-w-4xl mx-auto text-center relative z-10"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-4xl font-bold mb-8 text-purple-100">
+            コミュニティに参加しよう！
+          </h2>
+          <p className="text-xl text-purple-200 mb-8">
+            Discordでの交流、情報共有、共同作業など。
+            <br />
+            あなたの「作りたい！」を応援します！
+          </p>
+          <button className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover">
+            Discordに参加する
+          </button>
+        </motion.div>
+      </section>
+    </main>
   );
 }
