@@ -75,7 +75,10 @@ const Footer: React.FC = () => {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {FooterCustom.links.map((link) => (
-                <li key={link.href} style={{ marginBottom: "0.5rem" }}>
+                <li
+                  key={link.href}
+                  style={{ marginBottom: "0.5rem" }}
+                >
                   <Link
                     href={link.href}
                     style={{
@@ -102,7 +105,10 @@ const Footer: React.FC = () => {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {FooterCustom.socialLinks.map((social) => (
-                <li key={social.href} style={{ marginBottom: "0.5rem" }}>
+                <li
+                  key={social.href}
+                  style={{ marginBottom: "0.5rem" }}
+                >
                   <a
                     href={social.href}
                     target="_blank"
@@ -120,9 +126,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div
-          style={{ textAlign: "center", marginTop: "1.5rem", color: "#666" }}
-        >
+        <div style={{ textAlign: "center", marginTop: "1.5rem", color: "#666" }}>
           {FooterCustom.copyright}
         </div>
       </div>

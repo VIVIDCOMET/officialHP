@@ -24,7 +24,10 @@ export default function Header() {
         <ul className="flex space-x-4">
           {HeaderCustom.links.map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className="hover:underline">
+              <Link
+                href={link.href}
+                className="hover:underline"
+              >
                 {link.label}
               </Link>
             </li>

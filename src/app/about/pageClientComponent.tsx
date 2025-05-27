@@ -70,9 +70,7 @@ export default function AboutPage() {
           variants={fadeIn}
           className="bg-white/5 rounded-lg p-8 mb-12"
         >
-          <h2 className="text-2xl font-bold text-purple-100 mb-6">
-            私たちのミッション
-          </h2>
+          <h2 className="text-2xl font-bold text-purple-100 mb-6">私たちのミッション</h2>
           <p className="text-white text-lg leading-relaxed">{About.mission}</p>
         </motion.section>
 
@@ -92,9 +90,7 @@ export default function AboutPage() {
                 variants={fadeIn}
                 className="bg-white/5 rounded-lg p-6"
               >
-                <h3 className="text-xl font-bold text-purple-100 mb-3">
-                  {activity.title}
-                </h3>
+                <h3 className="text-xl font-bold text-purple-100 mb-3">{activity.title}</h3>
                 <p className="text-white">{activity.description}</p>
               </motion.div>
             ))}
@@ -117,9 +113,7 @@ export default function AboutPage() {
                 variants={fadeIn}
                 className="bg-white/5 rounded-lg p-6 text-center"
               >
-                <div className="text-3xl font-bold text-purple-100 mb-2">
-                  {stat.count}
-                </div>
+                <div className="text-3xl font-bold text-purple-100 mb-2">{stat.count}</div>
                 <div className="text-white">{stat.label}</div>
               </motion.div>
             ))}
@@ -134,12 +128,8 @@ export default function AboutPage() {
           variants={fadeIn}
           className="bg-white/5 rounded-lg p-8 text-center"
         >
-          <h2 className="text-2xl font-bold text-purple-100 mb-6">
-            お問い合わせ
-          </h2>
-          <p className="text-white text-lg mb-6">
-            お気軽にお問い合わせください
-          </p>
+          <h2 className="text-2xl font-bold text-purple-100 mb-6">お問い合わせ</h2>
+          <p className="text-white text-lg mb-6">お気軽にお問い合わせください</p>
           <button
             className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
             onClick={() => (window.location.href = "/contact")}

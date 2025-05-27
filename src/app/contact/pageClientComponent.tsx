@@ -25,9 +25,7 @@ const staggerContainer = {
 };
 
 export default function Contacts() {
-  const [selectedMethod, setSelectedMethod] = useState<
-    "email" | "discord" | null
-  >(null);
+  const [selectedMethod, setSelectedMethod] = useState<"email" | "discord" | null>(null);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-blue-900 py-20 px-6">
@@ -56,9 +54,7 @@ export default function Contacts() {
           <motion.div
             variants={fadeIn}
             className={`bg-white/5 rounded-lg p-8 cursor-pointer transition-all duration-300 ${
-              selectedMethod === "email"
-                ? "ring-2 ring-purple-400"
-                : "hover:bg-white/10"
+              selectedMethod === "email" ? "ring-2 ring-purple-400" : "hover:bg-white/10"
             }`}
             onClick={() => setSelectedMethod("email")}
           >
@@ -77,9 +73,7 @@ export default function Contacts() {
           <motion.div
             variants={fadeIn}
             className={`bg-white/5 rounded-lg p-8 cursor-pointer transition-all duration-300 ${
-              selectedMethod === "discord"
-                ? "ring-2 ring-purple-400"
-                : "hover:bg-white/10"
+              selectedMethod === "discord" ? "ring-2 ring-purple-400" : "hover:bg-white/10"
             }`}
             onClick={() => setSelectedMethod("discord")}
           >
@@ -104,18 +98,14 @@ export default function Contacts() {
         >
           {selectedMethod === "email" && (
             <>
-              <h3 className="text-xl font-bold text-purple-100 mb-4">
-                メールでのお問い合わせ
-              </h3>
+              <h3 className="text-xl font-bold text-purple-100 mb-4">メールでのお問い合わせ</h3>
               <p className="text-white mb-6">
                 以下のメールアドレスまでご連絡ください：
                 <br />
                 <span className="text-purple-300 text-lg">{Contact.email}</span>
               </p>
               <button
-                onClick={() =>
-                  (window.location.href = "mailto:traditional@example.com")
-                }
+                onClick={() => (window.location.href = "mailto:traditional@example.com")}
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
               >
                 メーラーを起動する
@@ -125,15 +115,11 @@ export default function Contacts() {
 
           {selectedMethod === "discord" && (
             <>
-              <h3 className="text-xl font-bold text-purple-100 mb-4">
-                Discordでのお問い合わせ
-              </h3>
+              <h3 className="text-xl font-bold text-purple-100 mb-4">Discordでのお問い合わせ</h3>
               <p className="text-white mb-6">
                 以下のリンクから公式Discordサーバーにご参加ください：
                 <br />
-                <span className="text-purple-300 text-lg">
-                  {Contact.discord}
-                </span>
+                <span className="text-purple-300 text-lg">{Contact.discord}</span>
               </p>
               <button
                 onClick={() => (window.location.href = Contact.discord)}

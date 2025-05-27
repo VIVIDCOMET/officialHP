@@ -35,7 +35,10 @@ export default function Works() {
           <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-blue-500/10" />
 
           {/* アイコンとテキスト */}
-          <motion.div animate={pulse} className="relative z-10 mb-8">
+          <motion.div
+            animate={pulse}
+            className="relative z-10 mb-8"
+          >
             <RiToolsFill className="text-7xl text-purple-400 mx-auto" />
           </motion.div>
 

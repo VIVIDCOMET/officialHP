@@ -78,11 +78,12 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <div className="bg-purple-500/80 rounded-md w-12 h-12 flex items-center justify-center mb-4 mx-auto">
-                <FaUnity className="text-white opacity-90" size={24} />
+                <FaUnity
+                  className="text-white opacity-90"
+                  size={24}
+                />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">
-                ゲーム開発
-              </h3>
+              <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">ゲーム開発</h3>
               <p className="text-purple-200 text-center break-keep">
                 Unityやゲームエンジンを使って、
                 <wbr />
@@ -104,11 +105,12 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="bg-purple-500/80 rounded-md w-12 h-12 flex items-center justify-center mb-4 mx-auto">
-                <FaLaptopCode className="text-white opacity-90" size={24} />
+                <FaLaptopCode
+                  className="text-white opacity-90"
+                  size={24}
+                />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">
-                勉強会
-              </h3>
+              <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">勉強会</h3>
               <p className="text-purple-200 text-center break-keep">
                 プログラミングやデザインの
                 <wbr />
@@ -128,7 +130,10 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="bg-purple-500/80 rounded-md w-12 h-12 flex items-center justify-center mb-4 mx-auto">
-                <FaPenFancy className="text-white opacity-90" size={24} />
+                <FaPenFancy
+                  className="text-white opacity-90"
+                  size={24}
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center text-purple-100">
                 イラスト・音楽・ストーリー制作
@@ -155,9 +160,7 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-8 text-purple-100">
-            コミュニティに参加しよう！
-          </h2>
+          <h2 className="text-4xl font-bold mb-8 text-purple-100">コミュニティに参加しよう！</h2>
           <p className="text-xl text-purple-200 mb-8">
             Discordでの交流、情報共有、共同作業など。
             <br />
