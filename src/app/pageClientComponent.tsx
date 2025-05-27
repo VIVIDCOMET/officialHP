@@ -4,6 +4,7 @@ import * as motion from "motion/react-client";
 import { FaUnity } from "react-icons/fa6";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaPenFancy } from "react-icons/fa";
+import { Home as HomeCustom } from "@/customization";
 
 export default function Home() {
   return (
@@ -41,7 +42,10 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <button className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover">
+            <button
+              className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover"
+              onClick={() => window.open(HomeCustom.discord, "_blank")}
+            >
               参加する
             </button>
             <button className="bg-transparent border-2 border-purple-400 text-purple-200 px-8 py-3 rounded-md font-semibold button-hover">
@@ -158,10 +162,7 @@ export default function Home() {
           </p>
           <button
             className="bg-purple-500 text-white px-8 py-3 rounded-md font-semibold button-hover"
-            onClick={() =>
-              // TODO: Replace with your Discord invite link
-              window.open("https://discord.gg/your-discord-link", "_blank")
-            }
+            onClick={() => window.open(HomeCustom.discord, "_blank")}
           >
             Discordに参加する
           </button>
