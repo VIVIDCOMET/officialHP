@@ -48,7 +48,10 @@ export default function Home() {
             >
               参加する
             </button>
-            <button className="bg-transparent border-2 border-purple-400 text-purple-200 px-8 py-3 rounded-md font-semibold button-hover">
+            <button
+              className="bg-transparent border-2 border-purple-400 text-purple-200 px-8 py-3 rounded-md font-semibold button-hover"
+              onClick={() => window.open("/works", "_blank")}
+            >
               活動を見る
             </button>
           </motion.div>
