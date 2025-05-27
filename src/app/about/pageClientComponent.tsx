@@ -34,7 +34,7 @@ export default function AboutPage() {
           className="text-center mb-16"
         >
           <h1 className="text-5xl font-bold text-white mb-6">団体概要</h1>
-          <p className="text-xl text-purple-200">{Common.orgDescription}</p>
+          <p className="text-xl text-purple-200">{About.orgDescription}</p>
         </motion.div>
 
         {/* 基本情報 */}
