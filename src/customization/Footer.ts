@@ -7,7 +7,7 @@ export const Footer = {
     height: 20,
   },
   description:
-    "VIVIDCOMETは、Web制作とデジタルコンテンツの制作を専門とする団体です。",
+    "VIVIDECOMETは、ゲームクリエイターのためのコミュニティです。私たちは、ゲーム制作に関わる人々が集まり、学び、成長する場を提供します。",
   location: "日本",
   //TODO: メールアドレスを設定
   email: "info@vividcomet.com",
