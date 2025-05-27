@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
-      {HeaderCustom.Logotype ? (
+      {HeaderCustom.logotype ? (
         <Link href="/">
           <Image
-            src={HeaderCustom.Logotype.src}
-            alt={HeaderCustom.Logotype.alt}
-            width={HeaderCustom.Logotype.width}
-            height={HeaderCustom.Logotype.height}
+            src={HeaderCustom.logotype.src}
+            alt={HeaderCustom.logotype.alt}
+            width={HeaderCustom.logotype.width}
+            height={HeaderCustom.logotype.height}
           />
         </Link>
       ) : (

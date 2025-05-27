@@ -1,6 +1,6 @@
 export const Header = {
   title: "VIVIDCOMET",
-  Logotype: {
+  logotype: {
     src: "/img/logotype_white.png",
     alt: "VIVIDCOMET Logo",
     width: 150,
