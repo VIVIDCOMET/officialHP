@@ -9,6 +9,7 @@ export const Footer = {
   description:
     "VIVIDCOMETは、Web制作とデジタルコンテンツの制作を専門とする団体です。",
   location: "日本",
+  //TODO: メールアドレスを設定
   email: "info@vividcomet.com",
   links: [
     {
