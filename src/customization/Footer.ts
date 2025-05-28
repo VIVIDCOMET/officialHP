@@ -40,7 +40,7 @@ export const Footer = {
       icon: "twitter", // Assuming you have an icon component for Twitter
     },
     {
-      href: "https://github.com/VIVID COMET",
+      href: "https://github.com/VIVIDCOMET",
       label: "GitHub",
       icon: "github", // Assuming you have an icon component for GitHub
     },
