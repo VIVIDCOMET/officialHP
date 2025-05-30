@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${Common.siteName} - ゲームクリエイターのためのコミュニティ`,
     description: "ゲームクリエイターのためのコミュニティ",
-    url: "https://vividco-hp.vercel.app/",
+    url: "https://vividcomet.jp/",
     siteName: Common.siteName,
     images: [Common.ogpImage],
     locale: "ja_JP",

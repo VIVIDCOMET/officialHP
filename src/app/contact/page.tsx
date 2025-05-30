@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `お問い合わせ - ${Common.siteName}`,
     description: `${Common.orgName}へのお問い合わせページです。`,
-    url: "https://vividco-hp.vercel.app/contact",
+    url: "https://vividcomet.jp/contact",
     siteName: Common.siteName,
     images: [Common.ogpImage],
     locale: "ja_JP",

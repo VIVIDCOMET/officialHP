@@ -3,7 +3,7 @@ export const Common = {
   orgName: "VIVID COMET",
   themeColor: "#00a1e9",
   ogpImage: {
-    url: "https://vividco-hp.vercel.app/img/icon.png",
+    url: "https://vividcomet.jp/img/icon.png",
     width: 1200,
     height: 630,
     alt: "VIVID COMET OG Image",
@@ -15,7 +15,7 @@ export const Common = {
     description: "ゲームクリエイターのためのコミュニティ",
     site: "@VIVID_COMET",
     creator: "@yuito_it_",
-    images: ["https://vividco-hp.vercel.app/img/icon.png"],
+    images: ["https://vividcomet.jp/img/icon.png"],
   },
 };
 
